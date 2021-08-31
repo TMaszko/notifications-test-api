@@ -35,13 +35,13 @@ async function sendMessage(token) {
 
 // Declare a route
 fastify.post("/notifications", async (request, reply) => {
-  await sendMessage(token);
+  await sendMessage(request.body.token);
   return "OK";
 });
 
 fastify.post("/alarm", async (request, reply) => {
   setTimeout(async () => {
-    await sendMessage(token);
+    await sendMessage(request.body.token);
     reply.send("OK");
   }, 20000);
 });
