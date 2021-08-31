@@ -1,0 +1,21 @@
+{
+  "name": "notifications-test-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.20.2",
+    "firebase-admin": "^9.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
